@@ -1,7 +1,10 @@
 using ListaTasks.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Identity.UI;
 using ListaTasks.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +16,25 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https:/
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-var app = builder.Build();
-
 // Configuração da DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Adiciona serviço de Autenticação
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = IdentityConstants.ApplicationScheme;
+}).AddIdentityCookies();
+
+builder.Services.AddIdentityCore<IdentityUser>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddSignInManager()
+    .AddDefaultTokenProviders();
+// Adiciona serviço de Autenticação
+
+
+
+var app = builder.Build();
 
 // Configurar HTTP request pipeline
 if (!app.Environment.IsDevelopment())
@@ -27,10 +44,20 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Call pro Seeder(Criar Admin User)
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    await DatabaseSeeder.SeedAdminUser(userManager);
+}
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();

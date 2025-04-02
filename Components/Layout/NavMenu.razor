@@ -28,3 +28,23 @@
     </nav>
 </div>
 
+<AuthorizeView>
+    <Authorized>
+        <!-- Your existing nav links -->
+        <button @onclick="Logout" class="btn btn-danger">Logout</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="/login" class="nav-link">Login</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    [Inject] private SignInManager<IdentityUser> SignInManager { get; set; }
+    [Inject] private NavigationManager Navigation { get; set; }
+
+    private async Task Logout()
+    {
+        await SignInManager.SignOutAsync();
+        Navigation.NavigateTo("/login");
+    }
+}
