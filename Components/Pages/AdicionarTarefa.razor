@@ -1,5 +1,76 @@
-﻿<h3>AdicionarTarefa</h3>
+﻿@page "/adicionar-tarefa"
+@attribute [Authorize]
+@inject TarefaService TarefaService
+@inject AuthenticationStateProvider AuthProvider
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Authorization
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@using ListaTasks.Models
+@using ListaTasks.Services
+@inject TarefaService TarefaService
+@inject AuthenticationStateProvider AuthProvider
+
+<PageTitle>Adicionar Tarefa</PageTitle>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h3>Adicionar nova tarefa</h3>
+        </div>
+        <div class="card-body">
+            <EditForm Model="@novaTarefa" OnValidSubmit="@HandleSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="mb-3">
+                    <label class="form-label">Título</label>
+                    <InputText @bind-Value="novaTarefa.Titulo" class="form-control" />
+                    <ValidationMessage For="@(() => novaTarefa.Titulo)" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <InputTextArea @bind-Value="novaTarefa.Descricao" class="form-control" rows="3" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Due Date</label>
+                    <InputDate @bind-Value="novaTarefa.DataLimite" class="form-control" />
+                    <ValidationMessage For="@(() => novaTarefa.DataLimite)" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Difficulty</label>
+                    <InputSelect @bind-Value="novaTarefa.Dificuldade" class="form-control">
+                        <option value="Easy">Fácil</option>
+                        <option value="Medium">Médio</option>
+                        <option value="Hard">Díficil</option>
+                    </InputSelect>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary me-2">Salvar</button>
+                    <NavLink href="/tarefas" class="btn btn-secondary">Cancelar</NavLink>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
 
 @code {
+    private Tarefa novaTarefa = new() { DataLimite = DateTime.Today };
+    private string userId = string.Empty;
 
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthProvider.GetAuthenticationStateAsync();
+        userId = authState.User.FindFirstValue(ClaimTypes.NameIdentifier);
+    }
+
+    private async Task HandleSubmit()
+    {
+        await TarefaService.CreateTaskAsync(novaTarefa, userId);
+        Navigation.NavigateTo("/tarefas");
+    }
 }
