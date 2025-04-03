@@ -19,7 +19,7 @@
             <h3>Adicionar nova tarefa</h3>
         </div>
         <div class="card-body">
-            <EditForm Model="@novaTarefa" OnValidSubmit="@HandleSubmit">
+            <EditForm Model="@novaTarefa" OnValidSubmit="@HandleSubmit" FormName="addTaskForm">
                 <DataAnnotationsValidator />
                 <ValidationSummary />
 
