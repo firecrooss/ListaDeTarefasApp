@@ -1,37 +1,45 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@inherits LayoutComponentBase
 @inject SignInManager<IdentityUser> SignInManager
 @inject NavigationManager Navigation
 
-@inherits LayoutComponentBase
+<div class="d-flex flex-column min-vh-100">
+    <header class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-tasks me-2"></i>TaskMaster
+            </a>
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            <AuthorizeView>
+                <Authorized>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <NavLink href="/tarefas" class="nav-link">Lista de Tarefas</NavLink>
+                        </li>
+                        <li class="nav-item">
+                            <NavLink href="/adicionar-tarefa" class="nav-link">Nova Tarefa</NavLink>
+                        </li>
+                    </ul>
+                    <button @onclick="Logout" class="btn btn-danger ms-auto">
+                        <i class="fas fa-sign-out-alt"></i> Sair
+                    </button>
+                </Authorized>
+            </AuthorizeView>
         </div>
+    </header>
 
-        <article class="content px-4">
-            @Body
-        </article>
+    <main class="flex-grow-1 p-3">
+        @Body
     </main>
-</div>
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
+    <footer class="bg-light p-3 text-center">
+        © @DateTime.Now.Year - TaskMaster
+    </footer>
 </div>
-
-<button @onclick="Logout" class="btn btn-danger">Logout</button>
 
 @code {
     private async Task Logout()
     {
         await SignInManager.SignOutAsync();
-        Navigation.NavigateTo("/login", true);
+        Navigation.NavigateTo("/login", forceLoad: true);
     }
 }

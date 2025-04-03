@@ -231,6 +231,7 @@ C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\yf
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\9ywmps2n2a-da95v2qkru.gz
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\7c54ts7cej-bpk8xqwxhs.gz
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\qn1ba8og4c-8inm30yfxf.gz
+C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\kyc9rj71ol-c33oyl7gmj.gz
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\qa6nwcass5-uetj19hpso.gz
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\compressed\b05i1dgduy-uetj19hpso.gz
 C:\Users\yanwa\source\repos\ListaTasks\ListaTasks\obj\Debug\net9.0\staticwebassets.build.json

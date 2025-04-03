@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nAIzGlLvEENKE07F4FLbj0ZBDVySAnOZOHuGBJ0b+m8=",
+  "Hash": "DiCsuBpazihKpVOMf/73UmDXcXIRWSadNuoZbncCtCk=",
   "Source": "ListaTasks",
   "BasePath": "_content/ListaTasks",
   "Mode": "Default",
@@ -2012,6 +2012,27 @@
       "OriginalItemSpec": "C:\\Users\\yanwa\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+      "Identity": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\kyc9rj71ol-c33oyl7gmj.gz",
+      "SourceId": "ListaTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ListaTasks",
+      "RelativePath": "site#[.{fingerprint=c33oyl7gmj}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jactjgsegf",
+      "Integrity": "hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\site.css"
+    },
+    {
       "Identity": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\l186vlgaag-37tfw0ft22.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -2871,6 +2892,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\site.css",
+      "SourceId": "ListaTasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\",
+      "BasePath": "_content/ListaTasks",
+      "RelativePath": "site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c33oyl7gmj",
+      "Integrity": "WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.css"
     }
   ],
   "Endpoints": [
@@ -14737,7 +14779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14790,7 +14832,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14827,7 +14869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14874,7 +14916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14927,7 +14969,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14964,7 +15006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15011,7 +15053,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15072,7 +15114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15117,7 +15159,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15172,7 +15214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15233,7 +15275,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15278,7 +15320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Apr 2025 22:02:56 GMT"
+          "Value": "Thu, 03 Apr 2025 01:12:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15305,6 +15347,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-3pBr5UFoEcI8doCMYc938QF5re8R0RAW1fjklZZrlf4="
+        }
+      ]
+    },
+    {
+      "Route": "site.c33oyl7gmj.css",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\kyc9rj71ol-c33oyl7gmj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001447178003"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "690"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c33oyl7gmj"
+        },
+        {
+          "Name": "label",
+          "Value": "site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA="
+        }
+      ]
+    },
+    {
+      "Route": "site.c33oyl7gmj.css",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c33oyl7gmj"
+        },
+        {
+          "Name": "label",
+          "Value": "site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA="
+        }
+      ]
+    },
+    {
+      "Route": "site.c33oyl7gmj.css.gz",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\kyc9rj71ol-c33oyl7gmj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c33oyl7gmj"
+        },
+        {
+          "Name": "label",
+          "Value": "site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs="
+        }
+      ]
+    },
+    {
+      "Route": "site.css",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\kyc9rj71ol-c33oyl7gmj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001447178003"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "690"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA="
+        }
+      ]
+    },
+    {
+      "Route": "site.css",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\wwwroot\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WJRYTLPuDVK+wX20WrA2+/Jz+yedbVN48lC8CZnWqCA="
+        }
+      ]
+    },
+    {
+      "Route": "site.css.gz",
+      "AssetFile": "C:\\Users\\yanwa\\source\\repos\\ListaTasks\\ListaTasks\\obj\\Debug\\net9.0\\compressed\\kyc9rj71ol-c33oyl7gmj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "690"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Apr 2025 23:44:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hamAv+iSQQjU6zfL0xdpPktwa/mhzXvVZIEYNIqlZgs="
         }
       ]
     }

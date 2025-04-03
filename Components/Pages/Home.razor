@@ -2,24 +2,5 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Login</h1>
+<h1>Welcome</h1>
 
-<input type="text" @oninput="HandleInputUser" @bind="User" />
-
-<input type="text" @oninput="HandleInputPsw" @bind="Password" />
-
-<p>@User and @Password</p>
-
-@code {
-
-	public String User = "";
-	public String Password = "";
-	private void HandleInputUser(ChangeEventArgs args)
-	{
-		User = (String)args.Value!;
-	}
-	private void HandleInputPsw(ChangeEventArgs args)
-	{
-		Password = (String)args.Value!;
-	}
-}

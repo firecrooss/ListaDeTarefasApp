@@ -1,0 +1,114 @@
+﻿@page "/tarefas"
+@attribute [Authorize]
+@using Microsoft.AspNetCore.Authorization
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@using ListaTasks.Models
+@using ListaTasks.Services
+@inject TarefaService TarefaService
+@inject AuthenticationStateProvider AuthProvider
+
+
+<PageTitle>Tarefas</PageTitle>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between mb-4">
+        <h2>Minhas Tarefas</h2>
+        <NavLink href="/adicionar-tarefa" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Nova Tarefa
+        </NavLink>
+    </div>
+
+    <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Filtrar tarefas..." 
+               @bind="searchTerm" @bind:event="oninput" />
+    </div>
+
+    <div class="accordion" id="tasksAccordion">
+        @foreach (var tarefa in filteredTarefas)
+        {
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button @(tarefa.Completa ? "bg-light" : "")" 
+                            type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#collapse-@tarefa.Id">
+                        <div class="form-check form-check-inline me-3">
+                            <input class="form-check-input" type="checkbox"
+                                   @bind="tarefa.Completa"
+                                   @bind:after="() => ToggleComplete(tarefa)" />
+                        </div>
+                        <span class="@(tarefa.Completa ? "text-decoration-line-through" : "")">
+                            @tarefa.Titulo
+                        </span>
+                        <span class="badge @GetDifficultyBadgeClass(tarefa.Dificuldade) ms-2">
+                            @tarefa.Dificuldade
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapse-@tarefa.Id" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>@tarefa.Descricao</p>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">
+                                Prazo: @tarefa.DataLimite.ToString("dd/MM/yyyy")
+                            </small>
+                            <div>
+                                <button @onclick="() => EditTarefa(tarefa)" 
+                                        class="btn btn-sm btn-outline-primary me-2">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button @onclick="() => DeleteTarefa(tarefa)" 
+                                        class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Tarefa> tarefas = new();
+    private string searchTerm = string.Empty;
+    private string userId = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthProvider.GetAuthenticationStateAsync();
+        userId = authState.User.FindFirstValue(ClaimTypes.NameIdentifier);
+        tarefas = await TarefaService.GetTarefasAsync(userId);
+    }
+
+    private IEnumerable<Tarefa> filteredTarefas => tarefas
+        .Where(t => string.IsNullOrEmpty(searchTerm) || 
+                   t.Titulo.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    private string GetDifficultyBadgeClass(string dificuldade)
+    {
+        return dificuldade switch
+        {
+            "Fácil" => "bg-success",
+            "Média" => "bg-warning text-dark",
+            "Difícil" => "bg-danger",
+            _ => "bg-secondary"
+        };
+    }
+
+    private async Task ToggleComplete(Tarefa tarefa)
+    {
+        await TarefaService.UpdateTarefaAsync(tarefa, tarefa.AssignedUserId);
+    }
+
+    private void EditTarefa(Tarefa tarefa)
+    {
+        // Implement navigation to edit page
+    }
+
+    private async Task DeleteTarefa(Tarefa tarefa)
+    {
+        // Implement delete functionality
+    }
+}

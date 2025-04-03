@@ -1,0 +1,117 @@
+﻿/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.login-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .logo i {
+        font-size: 3rem;
+        color: #2575fc;
+    }
+
+    .logo h1 {
+        margin-top: 0.5rem;
+        color: #333;
+    }
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 12px;
+}
+
+/* NavMenu Styles */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+    .brand i {
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+
+.nav-menu {
+    padding: 1rem 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .nav-link.active {
+        background: #3498db;
+        color: white;
+    }
+
+    .nav-link i {
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+
+.logout-btn {
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+    .logout-btn:hover {
+        background: rgba(231, 76, 60, 0.1);
+    }
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    background: #f5f7fa;
+}

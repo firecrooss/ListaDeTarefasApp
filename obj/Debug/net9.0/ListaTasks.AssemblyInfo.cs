@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ListaTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edf0f874815817673816954d76db9c8c9191fef4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1db4a6936401dd874f39a9e585301fd169924584")]
 [assembly: System.Reflection.AssemblyProductAttribute("ListaTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ListaTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
